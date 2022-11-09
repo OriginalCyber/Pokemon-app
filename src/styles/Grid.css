@@ -1,6 +1,6 @@
 .grid {
     display: grid;
-    row-gap: 20px;
+
     column-gap: 16px;
     
 }
@@ -10,5 +10,5 @@
 }
 
 .grid-2 {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 12fr ;
 }

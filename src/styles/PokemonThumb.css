@@ -1,8 +1,13 @@
+.app-contaner h1 {
+  padding-top: 0px;
+  padding-bottom: 20px;
+
+}
+
 
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
-      
   }
   .rock {
     background-color: rgb(148, 81, 81);
@@ -33,7 +38,6 @@
   }
   .water {
     background-color:#E0F1FD;
-    
   }
   
   .app-contaner {
@@ -43,14 +47,13 @@
     justify-content: center;
     min-height: 100vh;
     padding: 3rem 0.5rem;
-    
   }
-  .app-contaner h1 {
-    padding: 20px;
-    padding-top: 0px;
-    
+  .pokemon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-
 
   
   .all-container {
@@ -58,7 +61,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
   }
 
 
@@ -75,23 +77,19 @@
     min-width: 160px;
     text-align: center;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
-    
   }
 
   .thumb-container img {
     width: 120px;
     height: 120px;
-    border-radius: 20px;
   }
   .thumb-container small {
     text-transform: capitalize;
-    
   }
   .detail-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
   }
 
   .load-more {

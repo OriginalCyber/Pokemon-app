@@ -1,5 +1,5 @@
 // import  getPokemon ก่อน เดี่ยวรูปมันไม่ขึ้น
-// import getPokemon from './getPokemon';
+import getPokemon from './getPokemon';
 
 const SearchPage = () => {
 
