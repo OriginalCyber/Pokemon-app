@@ -3,8 +3,8 @@ import Header from './Header';
 import Footer from './Footer';
 import Box from './Box';
 import Grid from './Grid';
-import HomePage from '../Content/HomePage'
-import SearchPage from '../Content/SearchPage'
+import HomePage from '../Content/home/HomePage';
+import SearchPage from '../Content/search/SearchPage';
 import { Route, Routes } from 'react-router-dom';
 
 
