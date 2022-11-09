@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 16px;
+    
+}
+
+.grid-1 {
+    grid-template-columns: 0fr;    
+}
+
+.grid-2 {
+    grid-template-columns: 1fr 1fr ;
+}
