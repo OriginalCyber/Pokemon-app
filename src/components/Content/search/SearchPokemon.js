@@ -1,4 +1,4 @@
-const SearchPokemon = () => {
+
   document.querySelector("#search").addEventListener("click", getPokemon);
 
   function capitalizeFirstLetter(string) {
@@ -36,5 +36,3 @@ const SearchPokemon = () => {
 
     get.preventDefault();
   }
-};
-export default SearchPokemon;

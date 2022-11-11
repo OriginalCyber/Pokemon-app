@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react'
+// import SearchPokemon from '../search/SearchPokemon'
 import PokemonThumb from './PokemonThumb'
 
 
@@ -30,6 +31,7 @@ const HomePage = () => {
   }, [])
  
    return (
+    
      <div className="app-contaner">
        <h1>Pokemon Evolution</h1>
        <div className="pokemon-container">
@@ -46,7 +48,9 @@ const HomePage = () => {
          </div>
            <button className="load-more" onClick={() => getAllPokemons()}>Load more</button>
        </div>
+       
      </div>
+     
    );
  }
 export default HomePage;
