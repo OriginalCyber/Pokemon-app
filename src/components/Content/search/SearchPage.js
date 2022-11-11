@@ -1,5 +1,7 @@
+
 // import  getPokemon ก่อน เดี่ยวรูปมันไม่ขึ้น
-// import getPokemon from './getPokemon';
+import SearchPokemon from "./SearchPokemon";
+
 
 const SearchPage = () => {
 
@@ -10,9 +12,11 @@ const SearchPage = () => {
             <div class="searchBox">
                 <input id="pokemonName" type="Pokemon name" placeholder="Pokemon name"></input>
                     <button id="search">🔎</button>
-            </div>
-            <div class="pokemonBox">
-                <getPokemon />
+                        <div class="pokemonBox" >
+                            <SearchPokemon />
+
+
+                </div>
             </div>
         </div>
     </>
