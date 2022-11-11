@@ -1,10 +1,10 @@
-
+import DefaultLayout from '../../layout/DefaultLayout';
 // import  getPokemon ก่อน เดี่ยวรูปมันไม่ขึ้น
 
 const SearchPage = (getPokemon) => {
 
     return <>
-
+        <DefaultLayout>
         <div className="app-searchpage">
             <p>SearchPage</p>
             <div className="searchBox">
@@ -15,6 +15,7 @@ const SearchPage = (getPokemon) => {
                 
             </div>
         </div>
+        </DefaultLayout>
     </>
 };
 export default SearchPage;

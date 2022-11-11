@@ -1,7 +1,6 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from 'react'
-// import SearchPokemon from '../search/SearchPokemon'
-import PokemonThumb from './PokemonThumb'
+import DefaultLayout from '../../layout/DefaultLayout';
+import React, { useEffect, useState } from 'react';
+import PokemonThumb from '../home/PokemonThumb';
 
 
 const HomePage = () => {
@@ -32,6 +31,7 @@ const HomePage = () => {
  
    return (
     
+    <DefaultLayout>
      <div className="app-contaner">
        <h1>Pokemon Evolution</h1>
        <div className="pokemon-container">
@@ -50,6 +50,7 @@ const HomePage = () => {
        </div>
        
      </div>
+     </DefaultLayout>
      
    );
  }

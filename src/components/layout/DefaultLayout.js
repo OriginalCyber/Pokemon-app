@@ -1,38 +1,28 @@
-import Sider from './Sider';
+
+import Sider from '../layout/Sider';
 import Header from './Header';
-import Footer from './Footer';
-import Box from './ContainerBox';
-import Grid from './Grid';
-import HomePage from '../Content/home/HomePage';
-import SearchPage from '../Content/search/SearchPage';
-import { Route, Routes } from 'react-router-dom';
-
-
-const DefaultLayout = () => {
+import Footer from '../layout/Footer';
+function DefaultLayout(props) {
 
   return <>
     <section className='app-section'>
       <div className='app-container'>
-      <Header />
-        <Grid columns={2}>
-          <Box>
-            <Sider />
-          </Box>
-          <Box>
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="SearchPage" element={<SearchPage />} />
-            </Routes>
-          </Box>
-        </Grid>
-      <Footer />
+        <Header />
+          <div className='app-grid'>
+            <div className='app-box'>
+              <Sider />
+            </div>
+          <div className='app-box'>
+              {props.children}
+              
+            </div>
+          </div>
+        <Footer />
       </div>
     </section>
 
 
-
-
-  </>
+  </>;
 
 }
 export default DefaultLayout;
