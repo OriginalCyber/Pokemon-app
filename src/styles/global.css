@@ -1,9 +1,9 @@
 @import 'App.css';
-@import 'containerbox.css';
-@import 'defaultlayout.css';
+@import 'container-box.css';
+@import 'default-layout.css';
 @import 'footer.css';
 @import 'grid.css';
 @import 'header.css';
-@import 'pokemonthumb.css';
-@import 'searchpage.css';
+@import 'pokemon-thumb.css';
+@import 'search-page.css';
 @import 'sider.css';
