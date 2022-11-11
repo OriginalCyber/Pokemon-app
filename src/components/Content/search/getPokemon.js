@@ -19,22 +19,20 @@ function getPokemon(e) {
       <div>
         <img
           src="${data.sprites.other["official-artwork"].front_default}"
-          alt="Pokemon name"
+          alt="${capitalizeFirstLetter(data.name)}"
         />
       </div>
-      <div class="pokemonInfos">
-        <h1>${capitalizeFirstLetter(data.name)}</h3>
+      <div class="pokemonInfo">
+        <h1>${capitalizeFirstLetter(data.name)}</h1>
         <p>Weight: ${data.weight}</p>
       </div>`;
     })
     .catch((err) => {
-      document.querySelector(".pokemonBox").innerHTML = `
-      <h4>Pokemon not found 😞</h4>
-      `;
+      
       console.log("Pokemon not found", err);
     });
 
   e.preventDefault();
 }
 
-export default getPokemon;
+getPokemon();
